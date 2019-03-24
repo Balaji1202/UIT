@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+REGISTER YOURSELF
+</title>
+<meta charset="utf-8">
+<style type="text/css">
+/*html { 
+  background: url(college.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  background-position:absolute;
+  width:100%; }
+
+}
+*/
+</style>
+
+<script>
+function validate()
+{
+	var name1=document.forms["bookform"]["name"];
+	var name2=document.forms["bookform"]["roll"];
+	var name3=document.forms["bookform"]["dob"];
+	var n3 = document.forms["bookform"]["yr"]; 
+	var n4 = document.forms["bookform"]["dept"]; 
+	var name4=document.forms["bookform"]["mail"];
+	var name5=document.forms["bookform"]["ph"];
+
+
+	
+
+	if(name1.value=="")
+	{
+	window.alert("Please enter your NAME ");
+	name1.focus();
+	return false;
+	}
+	
+	if(name2.value == "")
+	{
+	window.alert("Please enter your ROLL NUMBER");
+	name2.focus();
+	return false;
+	}
+	
+	if(name3.value == "")
+	{
+	window.alert("Enter your DATE OF BIRTH");
+	name3.focus();
+	return false;
+	}
+	
+	if(n1.selectedIndex<1)
+	{
+	window.alert("Please select your ACADEMIC YEAR");
+	n1.focus();
+	return false;
+	}	
+
+	if(n2.selectedIndex<1)
+	{
+	window.alert("Please select your DEPARTMENT");
+	n2.focus();
+	return false;
+	}
+	
+	if(name4.value=="")
+	{
+	window.alert("Please enter your MAIL ID ");
+	name4.focus();
+	return false;
+	}
+	
+	if(name5.value=="")
+	{
+	window.alert("Please enter your CONTACT NUMBER ");
+	name5.focus();
+	return false;
+	}
+}
+	
+	</script>
+<link rel="stylesheet" type=text/css href="style.css">
+</head>
+
+<body>
+<header>
+<img src="logo1.jpg" width=100 height=100 align=left style="z-index:2">
+
+<a href="mailto:balajilitsv@gmail.com"><img src="email.png" width=50 height=50 style="position:absolute; top:7px;left:1120px;z-index:1"></a>
+<a href="https://www.google.co.in/search?q=kongu+engineering+college&oq=kongu+engineering+college+&aqs=chrome..69i57j0l5.3889j0j7&sourceid=chrome&ie=UTF-8"><img src="goo.png" width=50 height=50 style="z-index:1;position:absolute; top:8px;left:1180px;"></a>
+<a href="https://www.facebook.com/kecautonomous"><img src="fb.png" width=60 height=55 style="position:absolute; top:5px;left:1230px;z-index:2"></a>
+<a href="https://www.youtube.com/channel/UCsbtfH7LEZgZMDU8RYzXVKA"><img src="yt.gif" width=50 height=50 style="position:absolute; top:8px;left:1290px;z-index:1"></a>
+
+<marquee style="position:absolute;top:10px;left:300px;font-size:20pt ">Welcome to online hostel room booking website!</marquee>
+<h6 id="home" style="position:absolute; left:160px;top:-120px;z-index:1">KEC</h6><p style="font-size:11pt;word-spacing:1px;color:#04579E;position:absolute;top:48px;left:115px">KONGU ENGINEERING COLLEGE</p><p style="font-size:11pt;word-spacing:1px;color:#04579E;position:absolute;top:68px;left:165px">HOSTEL PORTAL</p>
+
+<div class="navbar" style="position:absolute;top:57px;left:379px"> 
+  <a href="adapt.html">HOME</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">BOYS' HOSTEL &#x21E9
+      </button>
+    <div class="dropdown-content">
+      <a href="boys.html">VIEW ROOMS</a>
+      <a href="#">RULES</a>
+      <a href="#">CONTACT</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">GIRLS' HOSTEL &#x21E9
+    </button>
+    <div class="dropdown-content">
+      <a href="girls.html">VIEW ROOMS</a>
+      <a href="#">RULES</a>
+      <a href="#">CONTACT</a>
+    </div>
+  </div> 
+  
+  
+  <div class="dropdown">
+    <button class="dropbtn">HOSTEL LIFE &#x21E9
+    </button>
+    <div class="dropdown-content">
+      <a href="#">ENVIRONMENT</a>
+      <a href="#">TRAVEL</a>
+      <a href="#">NEAR-BY CENTERS</a>
+    </div>
+  </div> 
+<a href="book.html">BOOK ROOM</a>  
+  </div>
+</header>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<body>
+<form name="bookform" method="get" onsubmit="return validate()" action="sub.html">
+
+<p><label> TRANSACTION ID<input name="name" type="text" size="30" maxlength="20" style="margin-left:100px"/></label></p>
+
+<p><label> MAIL ID<input name="roll" type="name" style="margin-left:72px"/></label></p>
+
+<p><label>PASSWORD<input name="dob" type="date" style="margin-left:12px"/></label></p>
+
+<p><label>RECONFIRM PASSWORD<input name="dob" type="date" style="margin-left:12px"/></label></p>
+<br>
+<input type="submit" value="REGISTER">
+<input type="reset" value="RESET">
+
+
+<p><label> MAIL ID<input name="name" type="text" size="30" maxlength="20" style="margin-left:100px"/></label></p>
+
+<p><label> PASSWORD<input name="roll" type="password" style="margin-left:72px"/></label></p>
+<input type="submit" value="LOGIN">
+<input type="reset" value="RESET">
+
+</form>
+
+</body>
+</html>
